@@ -1,0 +1,35 @@
+.modalDiv {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #deletedDiv {
+    width: 400px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      color: #008594;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      margin: 20px;
+      font-weight: 600;
+      font-size: 18px;
+      color: #174348;
+      cursor: pointer;
+    }
+  }
+}

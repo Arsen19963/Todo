@@ -1,0 +1,54 @@
+.todoBodyList{
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E5E5E5;
+  height: 72px;
+  .checkbox{
+      cursor: pointer;
+      width: 18px;
+      height: 18px;       
+      accent-color: #008594;      
+  }
+  p{
+      font-weight: 400;
+      font-size: 18px;
+      color: #666666;
+      margin-inline: 8px;
+  }
+  button{
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      width: 14px;
+      color: #174348;
+  }
+  .opacityTask{
+      color: #ACACAC;
+  }
+}
+#displayHidden{
+  display: none;
+}
+
+@media (max-width: 940px) {
+  #taskTag{
+      font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .todoBodyList{
+      flex-direction: row;
+  }
+  .checkbox{
+      display: inline-block !important;
+  }
+  #taskTag{
+      width: 270px;
+      word-wrap: break-word;
+      font-size: 14px;
+      text-align: center;
+  }
+ 
+}

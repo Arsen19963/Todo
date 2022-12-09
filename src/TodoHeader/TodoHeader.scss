@@ -1,0 +1,98 @@
+.todoHeader {
+  margin-block: 60px;
+  position: relative;
+  .hideCompleted {
+    position: absolute;
+    left: 70%;
+    top: -83px;
+    text-align: center;
+    label {
+      display: flex;
+      align-items: center;
+      .checkbox {
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        accent-color: #008594;
+        margin-right: 5px;
+      }
+      p {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 18px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .addInput {
+    width: 70%;
+    height: 52px;
+    border: 1px solid #ffcd04;
+    border-radius: 4px;
+    padding-left: 24px;
+    padding-right: 5px;
+    color: #174348;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .addButton {
+    background: #008594;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    width: 100px;
+    height: 52px;
+    margin-left: 24px;
+    border: none;
+    cursor: pointer;
+  }
+  #inputLengthWorning:focus {
+    outline: none;
+    border: 1px solid #ff3104;
+  }
+  .lengthWorning {
+    font-weight: 400;
+    font-size: 12px;
+    color: #ff3104;
+    position: absolute;
+  }
+}
+
+@media (max-width: 650px) {
+  #hideCompleted {
+    left: 55%;
+  }
+  #addButton {
+    width: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .todoHeader {
+    margin-inline: 30px !important;
+  }
+  #hideCompleted {
+    left: 40%;
+  }
+  .addInput {
+    width: 95% !important;
+  }
+  .addButton {
+    margin-top: 20px;
+    width: 92px !important;
+    height: 44px !important;
+    margin-left: 69% !important;
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 450px) {
+  .addButton {
+    margin-left: 70% !important;
+  }
+  .addInput {
+    width: 250px !important;
+    height: 44px !important;
+  }
+}
